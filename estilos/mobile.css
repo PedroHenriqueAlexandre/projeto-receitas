@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+}
+
+@font-face {
+    font-family: 'outfitblack';
+    src: url(fonts/young-serif/OFL.txt);
+}
+
+body,html{
+    height: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: burlywood;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+main {
+    height: 1200px;
+    padding: 20px;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+}
+
+
+section#imagem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width:  100%;
+    height: 100%;
+}
+
+section#s2{
+    margin-left: -100px;
+}
+
+h1{
+    font-family: 'outfitblack';
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+
+
