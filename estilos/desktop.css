@@ -30,6 +30,7 @@ main{
     padding: 30px;
     padding-bottom: 35px;
     margin-bottom: 20px;
+    border-radius: 20px;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
