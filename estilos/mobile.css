@@ -75,7 +75,7 @@ p{
 }
 
 ul li::marker {
-    color: purple; /* ou qualquer outra cor */
+    color: purple; 
   }
 
 ul > li{
