@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'outfitblack';
+    src: url(fonts/young-serif/OFL.txt);
+}
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,43 +13,39 @@
     border-collapse: collapse;
 }
 
-@font-face {
-    font-family: 'outfitblack';
-    src: url(fonts/young-serif/OFL.txt);
-}
-
-body {
-   
-    height: 100%;
-    background-color: burlywood;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
-
-main {
-    height: auto;
-    flex-flow: column nowrap;
+body{
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    background-color: antiquewhite;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
     background-color: white;
-    width: 350px;
+    width: 550px;
+    height: auto;
+    padding: 30px;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
-.seção{
-    padding: 20px;
-}
-
-
-section#imagem{
+section#imagem, img{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width:  100%;
     height: 100%;
+    border-radius: 10px;
+}
+
+p{
+    padding: 10px;
+    padding-left: 20px;
 }
 
 h1{
@@ -52,66 +53,49 @@ h1{
     font-size: 2em;
     font-weight: bolder;
     padding: 10px;
-    padding-top: 20px;
-}
-
-h2{
-    font-family:  'outfitblack';
-    padding: 10px;
-    font-size: 1.9em;
-    color: rgb(121, 60, 17);
-    text-shadow: 1px 1px rgb(112, 56, 16);
-}
-
-h3{
-    padding: 10px;
-    color: purple;
     padding-left: 20px;
 }
 
-p{
-   padding: 10px;
+h2{
+    font-family: 'outfitblack';
+    color: rgb(121, 60, 17);
+    text-shadow: 1px 1px rgb(112, 56, 16);
+    padding-left: 30px;
+}
+
+h3{
+    color: purple;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+ol, ul{
+    padding: 30px;
+    padding-left: 50px;
+    line-height: 30px;
 }
 
 ul li::marker {
     color: purple; /* ou qualquer outra cor */
   }
 
-ul > li{
-    padding: 7px;
-    color: black;
-    margin-left: 30px;
-}
-
-ul#temp > li{
-    margin-left: 40px;
-}
-
-ol{
-    line-height: 20px;
-}
-
-ol > li{
-    margin-left: 20px;
-    padding: 5px;
-}
-
-ol li::marker {
+  ol li::marker {
     color: rgb(121, 60, 17);
     text-shadow: 1px 1px rgb(112, 56, 16);
   }
 
-  ol#instruc > li{
-    margin-left: 30px;
-  }
 
-tr{
-    line-height: 30px;
-    
+  tr{
+    line-height: 35px;
 }
 
 tr > td{
     padding-left: 70px;
+}
+
+tr > .dados{
+    color: rgb(112, 56, 16);
+    font-weight: bolder;
 }
 
 
